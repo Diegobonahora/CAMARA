@@ -10,18 +10,16 @@
 </head>
 <body>
     <a-scene 
-        mindar-image="imageTargetSrc: marcador/limonagrio.mind;"
-        color-space="sRGB"
-        renderer="colorManagement: true, physicallyCorrectLights: true"
-        vr-mode-ui="enabled: false"
-        device-orientation-permission-ui="enabled: false"
-    >
-        <a-camera active="false" position="0 0 0"></a-camera>
-
-       <a-gltf-model 
-         src="bmo.glb"
-         rotation="90 0 0"      position="0 0 0"       scale="2 2 2"          >
-      </a-gltf-model>
-    </a-scene>
+    mindar-image="imageTargetSrc: marcador/limonagrio.mind; smooth: true; smoothCount: 10; smoothTolerance: 0.05;" 
+    color-space="sRGB"
+    renderer="colorManagement: true, physicallyCorrectLights: true"
+    vr-mode-ui="enabled: false"
+    device-orientation-permission-ui="enabled: false"
+>
+    <a-gltf-model 
+    src="bmo.glb"
+    rotation="90 0 0" 
+    position="0 0 0.5"   scale="2 2 2"
+></a-gltf-model>
 </body>
 </html>
